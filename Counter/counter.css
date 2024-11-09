@@ -1,0 +1,41 @@
+body {
+    background: #121420;
+}
+
+.counter-container {
+    position: relative;
+    height: 35px;
+    overflow: hidden;
+    margin-left: 50px;
+}
+
+#counter {
+    font-size: 35px;
+    color: #b76d68; 
+    font-family: "Comic Sans MS";
+    font-weight: bolder;
+    position: absolute;
+    top: 0;
+    transition: top 0.3s ease-out;
+}
+
+button {
+    background-color: #2c2b3c;
+    color: #fff;
+    border: 3px solid #b76d68;
+    border-radius: 5px;
+    width: 69px;
+    height: auto;
+    padding: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button:hover {
+    background-color: #b76d68;
+    color: #121420;
+}   
+
+button:active {
+    background-color: aliceblue;
+    color: crimson;
+}
