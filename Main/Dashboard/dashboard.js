@@ -1,4 +1,12 @@
 document.addEventListener('DOMContentLoaded', () => {
+    
+    const aboutMeBtn = document.getElementById("aboutMeBtn");
+
+    aboutMeBtn.addEventListener('click', function() {
+        window.location.href = './About Me/aboutMe.html';
+    });
+    
+    
     const urlParams = new URLSearchParams(window.location.search);
     const usernameFromUrl = urlParams.get('username');
 
@@ -45,4 +53,5 @@ function logout() {
     // Redirect the user to the login page
     window.location.href = '../Login Page/login.html';
 }
+
 
