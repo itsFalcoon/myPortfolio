@@ -3,12 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Dashboard</title>
     <script src="dashboard.js"></script>
     <link rel="stylesheet" href="dashboard.css">
-
 </head>
 <body>
-    <h1 id="welcomeMessage">Hey! XX</h1>
+    <div class="welcome-message">
+        <span class="user-icon" id="userIcon"></span>
+        <h1 id="welcomeMessage">Hey! Username</h1>
+    </div>
+
+    <div class="dropdown-menu" id="dropdownMenu">
+        <ul>
+            <li><a href="#" onclick="logout()">Log Out</a></li>
+            <!-- Add more options here -->
+        </ul>
+    </div>
 </body>
 </html>
